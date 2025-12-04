@@ -1,77 +1,124 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NHƯ ANH</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hồ Sơ Cá Nhân</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #88a4b9;
+        margin: 0;
+        padding: 0;
+    }
 
-    <style>
-        body {
-            background-image: url("backnanh1.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 100vh; 
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+    .card {
+        width: 70%;
+        max-width: 950px;
+        background: white;
+        margin: 50px auto;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        gap: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        border: 3px solid #627d98;
+    }
 
-        .avatar {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #bcdcff;
-            display: block;
-            margin: 0 auto 10px auto;
-        }
+    /* Ảnh bên phải */
+    .profile-img {
+        width: 260px;
+        height: 260px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 4px solid #bfcbe2;
+    }
 
-        .card {
-            width: 320px;
-            background: rgba(255, 255, 255, 0.25);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            margin: 40px auto;
-            text-align: center;
-        }
+    .right-box {
+        width: 260px;
+        text-align: center;
+    }
 
-        h1 {
-            font-size: 30px;
-            color: white;
-            text-shadow: 0 0 10px #00aaff,
-                         0 0 20px #00aaff,
-                         0 0 30px #00aaff;
-            margin-bottom: 10px;
-        }
+    .name {
+        margin-top: 15px;
+        font-size: 26px;
+        font-weight: 700;
+        color: #2a3d55;
+    }
 
-        .subtitle {
-            background-color: #9387AB;
-            color: white;
-            padding: 10px;
-            border-radius: 10px;
-        }
+    .role {
+        font-size: 15px;
+        color: #444;
+        margin-top: 5px;
+    }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 40px;
-        }
-    </style>
+    .left-box {
+        flex: 1;
+    }
+
+    .section-title {
+        margin-top: 10px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #1c3453;
+    }
+
+    .info-list p {
+        margin: 6px 0;
+        font-size: 17px;
+        color: #333;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin: 25px 0 0 50px;
+        padding: 10px 20px;
+        background: #2a4d69;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .back-btn:hover {
+        background: #1d3550;
+    }
+</style>
 </head>
 
 <body>
 
-    <div class="card">
-        <img src="avtnanh.jpg" class="avatar">
-        <h1>NGÔ NGỌC NHƯ ANH</h1>
+<a href="index.html" class="back-btn">← Quay về trang chủ</a>
 
-        <div class="subtitle">
-            <p>B.A.B.Y.M.O.N WE UP UP UP 🤟🔥</p>
+<div class="card">
+
+    <!-- BÊN TRÁI: THÔNG TIN -->
+    <div class="left-box">
+        <div class="section-title">Thông tin chính</div>
+        <div class="info-list">
+            <p><b>Ngày sinh:</b>22/10/2008</p>
+            <p><b>Cung hoàng đạo:</b>Thiên Bình</p>
+            <p><b>Sở thích:</b> Ăn đồ Hàn, Ngủ, Nghe nhạc KPOP, nhảy </p>
+            <p><b>Nghệ sĩ / Nhân vật yêu thích:</b> BABYMONSTER, Song Kang, Kim Yoo Jung </p>
+            <p><b>Nguyện vọng đại học:</b> Ngành Ngôn Ngữ Hàn Quốc - Trường Đại học Sư Phạm Thành phố Hồ Chí Minh (HCMUE) </p>
+            <p><b>Châm ngôn:</b> Đừng từ bỏ ước mơ chỉ vì không có tiếng vỗ tay </p>
+        </div>
+
+        <div class="section-title">Liên hệ</div>
+        <div class="info-list">
+            <p><b>Email:</b> nhungo2210028@gmail.comcom</p>
+            <p><b>Số điện thoại:</b>0374515859</p>
         </div>
     </div>
+
+    <!-- BÊN PHẢI: ẢNH + TÊN + CHỨC VỤ -->
+    <div class="right-box">
+        <img src="avtnanh1.jpg" class="profile-img" alt="profile">
+        <div class="name">Ngô Ngọc Như Anh</div>
+        <div class="role">Nhóm Trưởng</div>
+    </div>
+
+</div>
 
 </body>
 </html>
