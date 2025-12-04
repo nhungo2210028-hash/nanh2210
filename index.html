@@ -47,11 +47,11 @@
         color: #2a3d55;
     }
 
-    /* ĐÃ SỬA LỖI CHỖ NÀY */
+    /* sửa đúng cú pháp cho .role (giữ kiểu như yêu cầu trước) */
     .role {
-        font-size: 20px;
+        font-size: 20px;      /* Tăng kích thước chữ */
         color: #444;
-        margin-top: 12px;
+        margin-top: 12px;     /* Tạo khoảng cách với tên */
         font-weight: 600;
     }
 
@@ -59,11 +59,10 @@
         flex: 1;
     }
 
-    /* TĂNG CỠ CHỮ + IN ĐẬM THEO YÊU CẦU */
     .section-title {
         margin-top: 20px;
-        font-size: 26px;      /* tăng từ 22px → 26px */
-        font-weight: 900;     /* đậm hơn */
+        font-size: 22px;
+        font-weight: 700;
         color: #1c3453;
     }
 
@@ -91,6 +90,11 @@
     .back-btn:hover {
         background: #1d3550;
     }
+
+    /* ----- CHỈ ĐỔI PHÔNG CHO KHỐI LIÊN HỆ ----- */
+    .contact-info {
+        font-family: Georgia, serif; /* phông mới cho Liên hệ */
+    }
 </style>
 </head>
 
@@ -108,13 +112,14 @@
             <p><b>🎹Sở thích:</b> Ăn Đồ Hàn, Xem phim Hàn, Nghe nhạc KPOP, Ngủ, Nhảy</p>
             <p><b>🧸Nghệ sĩ yêu thích:</b> BABYMONSTER, BLACKPINK, YoungSeo (ALLDAY PROJECT), Ahn Hyo Seop, Choi Woo Shik, Song Kang, Kim Yoo Jung, Hwang in Yeop, Kim Do Hoon, JukySan, 52HZ, Ánh sáng AZA, Hoàng Dũng, LowG, Bình Trường Lui, Dương DOMIC, Quang Hùng MasterD </p>
             <p><b>🎓Nguyện vọng đại học:</b> Ngành Ngôn Ngữ Hàn Quốc - HCMUE</p>
-            <p><b>🔑Châm ngôn:</b> "Đừng từ bỏ ước mơ chỉ vì không có tiếng vỗ tay"</p>
+            <p><b>🔑Châm ngôn:</b> "Đừng từ bỏ ước mơ chỉ vì không có tiếng vỗ tay" </p>
         </div>
 
         <div class="space"></div>
 
         <div class="section-title">LIÊN HỆ</div>
-        <div class="info-list">
+        <!-- thêm class contact-info chỉ cho khối liên hệ -->
+        <div class="info-list contact-info">
             <p><b>💌Email:</b> nhungo2210028@gmail.com</p>
             <p><b>📞Số điện thoại:</b> 0374515859</p>
         </div>
@@ -127,6 +132,10 @@
     </div>
 
 </div>
+
+</body>
+</html>
+
 
 </body>
 </html>
